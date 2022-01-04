@@ -11,11 +11,40 @@
 
 <body>
     <h1>Formulario</h1>
-    <form method="" action="">
+    <form method="https://vigo-rocks.free.beeceptor.com" action="post">
 
         <fieldset>
-            <label for="nombre">Nombre: </label>
-            <input type="text" required placeholder="Nombre" name="nombre" id="nombre" required>
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" placeholder="Nombre" name="nombre" id="nombre" maxlength="50" required>
+            </div>
+            <div>
+ 
+                <label for="edad">Edad:</label>
+                <input type="number" max="99" min="18" name="edad" id="edad" placeholder="Edad" required>
+            </div>
+            <div>
+                <label for="origen">Ciudad de origen: </label>
+                <input type="text" placeholder="Ciudad" name="origen" id="origen" maxlength="100" required>
+            </div>
+            <div>
+                <label for="medio_transporte">Como vienes?:</label>
+                <select name="medio_transporte" id="medio_transporte" required>
+                    <option value="1">A pie</option>
+                    <option value="2">Trans. publico</option>
+                    <option value="3">Trans. privado</option>
+                </select>
+            </div>
+            <div>
+                <label for="objetivo">Objetivo: </label>
+                <input type="text" placeholder="Objetivo" name="objetivo" id="objetivo" maxlength="1024">
+            </div>
+            <div>
+                <label for="">3 cosas sobre ti, una de ellas falsa: </label>
+                <input type="text" placeholder="Una cosa" maxlength="100" required>
+                <input type="text" placeholder="Otra cosa" maxlength="100" required>
+                <input type="text" placeholder="La última cosa" maxlength="100" required>
+            </div>
         </fieldset>
 
         <input type="submit" class="submit" id="submit" value="Enviar" />
